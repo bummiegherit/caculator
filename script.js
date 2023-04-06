@@ -1,4 +1,3 @@
-(function() {
 
     let screen = document.querySelector('.screen');
     let buttons = document.querySelectorAll('.btn');
@@ -17,13 +16,13 @@
             screen.value = "";
         }else{
             let answer = eval(screen.value);
-            answer = screen.value;
+            screen.value = answer;
         }
-    })
+    });
 
     clear.addEventListener('click', function(e){
         screen.value = "";
-    })
+    });
 
-})();
+
 
